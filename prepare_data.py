@@ -3,11 +3,9 @@ from config import DATASET_ID
 
 
 def format_instruction(sample):
-    """Format sample into Llama 3.1 Instruct chat template."""
     text = (
-        f"<|begin_of_text|><|start_header_id|>user<|end_header_id|>\n\n"
-        f"{sample['instruction']}<|eot_id|><|start_header_id|>assistant<|end_header_id|>\n\n"
-        f"{sample['output']}<|eot_id|>"
+        f"<|im_start|>user\n{sample['instruction']}<|im_end|>\n"
+        f"<|im_start|>assistant\n{sample['output']}<|im_end|>"
     )
     return {"text": text}
 

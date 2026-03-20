@@ -1,5 +1,5 @@
-MODEL_ID = "unsloth/Meta-Llama-3.1-8B-Instruct-bnb-4bit"
-FALLBACK_MODEL_ID = "meta-llama/Llama-3.1-8B-Instruct"
+MODEL_ID = "Qwen/Qwen2.5-0.5B-Instruct"
+FALLBACK_MODEL_ID = "Qwen/Qwen2.5-0.5B-Instruct"
 DATASET_ID = "arbml/CIDAR"
 
 LORA_R = 16
